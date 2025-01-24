@@ -1,7 +1,3 @@
-Here’s a professional and well-structured `README.md` file for your GitHub repository:
-
----
-
 # **Learning Algorithms**
 
 Welcome to the **Learning Algorithms** repository! This project is a collection of algorithms implemented in C++, designed to enhance my understanding of algorithmic concepts and their applications. Each algorithm is tested using custom functions to ensure correctness and efficiency.
@@ -87,3 +83,5 @@ If you have any questions, suggestions, or feedback, feel free to reach out:
 
 - **Email**: shaidozzamanaraf21@gmail.com
 - **GitHub**: [orionaraf](https://github.com/orionaraf)
+
+Thank you!
