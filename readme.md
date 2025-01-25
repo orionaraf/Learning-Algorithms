@@ -11,17 +11,17 @@ The repository is organized into the following files and directories:
 ```
 ├── main.cpp         // Entry point of the program
 ├── algorithms.cpp   // Contains implemented algorithms
-├── algorithms.h     // Header file for algorithms
+├── algorithms.hpp     // Header file for algorithms
 ├── functions.cpp    // Contains functions to test algorithms
-├── functions.h      // Header file for functions
+├── functions.hpp      // Header file for functions
 ├── Makefile         // Makefile for bundling the project
 ```
 
 ### **File Descriptions**
 
 - **`main.cpp`**: The entry point for running and testing the implemented algorithms.
-- **`algorithms.cpp` & `algorithms.h`**: Contain the implementation of various algorithms along with their corresponding function declarations.
-- **`functions.cpp` & `functions.h`**: Provide utility functions and test cases to verify the correctness of the algorithms.
+- **`algorithms.cpp` & `algorithms.hpp`**: Contain the implementation of various algorithms along with their corresponding function declarations.
+- **`functions.cpp` & `functions.hpp`**: Provide utility functions and test cases to verify the correctness of the algorithms.
 
 ---
 
