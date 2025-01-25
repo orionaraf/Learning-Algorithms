@@ -3,5 +3,6 @@
 
 void testBFS();
 void testDFS();
+void testBinarySearch();
 
 #endif 

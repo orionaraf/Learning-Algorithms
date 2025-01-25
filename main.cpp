@@ -6,8 +6,7 @@
 
 int main()
 {
-    testBFS();
-    testDFS();
+    testBinarySearch();
 
     return 0;
 }

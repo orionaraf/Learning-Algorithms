@@ -35,3 +35,10 @@ void testDFS()
     cout << "Depth First Search: ";
     depthFirstSearch(0, graph);
 }
+
+void testBinarySearch()
+{
+    vector<int> array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    cout << "Binary Search: " << binarySearch(array, 5) << "\n";
+}

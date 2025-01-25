@@ -57,3 +57,24 @@ void depthFirstSearch(int start, vector<vector<int>>& graph)
 
     cout << "\n";
 }
+
+int binarySearch(vector<int>& array, int target)
+{
+    int left = 0;
+    int right = array.size() - 1;
+
+    while (left <= right) {
+        int middle = left + (right - left) / 2;
+
+        if (array[middle] == target) {
+            return middle;
+        } else if (array[middle] < target) {
+            left = middle + 1;
+        } else if (array[middle] > target) {
+            right = middle - 1;
+        }
+    }
+
+    // If the target is not found
+    return -1;
+}
