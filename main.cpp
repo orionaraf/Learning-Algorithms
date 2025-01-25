@@ -2,7 +2,7 @@
 #include<vector>
 #include<queue>
 
-#include "functions.h"
+#include "functions.hpp"
 
 int main()
 {

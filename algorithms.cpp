@@ -3,7 +3,7 @@
 #include<queue>
 #include<stack>
 
-#include "algorithms.h"
+#include "algorithms.hpp"
 
 using namespace std;
 

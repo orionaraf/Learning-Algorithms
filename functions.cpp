@@ -1,8 +1,8 @@
 #include<iostream>
 #include<vector>
 
-#include "algorithms.h"
-#include "functions.h"
+#include "algorithms.hpp"
+#include "functions.hpp"
 
 using namespace std;
 
