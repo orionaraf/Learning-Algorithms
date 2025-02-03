@@ -66,3 +66,16 @@ void testMergeSort() {
     cout << "\n";
 }
 
+void testCountingSort() {
+    vector<int> array = { 4, 2, 2, 8, 3, 3, 1 };
+
+    cout << "Counting Sort: ";
+    countingSort(array);
+
+    for (int i = 0; i < array.size(); i++) {
+        cout << array[i] << " ";
+    }
+
+    cout << "\n";
+}
+

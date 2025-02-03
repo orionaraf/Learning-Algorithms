@@ -1,7 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<queue>
-#include<stack>
+#include <bits/stdc++.h>
 
 #include "algorithms.hpp"
 
@@ -136,3 +133,23 @@ void mergeSort(vector<int>& array, int left, int right) {
         merge(array, left, mid, right);
     }
 }
+
+void countingSort(vector<int>& array) {
+    int max = *max_element(array.begin(), array.end());
+
+    vector<int> count(max + 1, 0);
+
+    for (int num : array) {
+        count[num]++;
+    }
+
+    int index = 0;
+
+    for (int i = 0; i < count.size(); i++) {
+        while (count[i] > 0) {
+            array[index++] = i;
+            count[i]--;
+        }
+    }
+}
+
