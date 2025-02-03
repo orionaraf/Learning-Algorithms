@@ -4,5 +4,6 @@
 void testBFS();
 void testDFS();
 void testBinarySearch();
+void testQuickSort();
 
 #endif 

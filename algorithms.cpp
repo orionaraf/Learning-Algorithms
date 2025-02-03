@@ -7,8 +7,7 @@
 
 using namespace std;
 
-void breadthFirstSearch(int start, vector<vector<int>>& graph)
-{
+void breadthFirstSearch(int start, vector<vector<int>>& graph) {
     vector<bool> visited(graph.size(), false);
     queue<int> q;
 
@@ -32,8 +31,7 @@ void breadthFirstSearch(int start, vector<vector<int>>& graph)
     cout << "\n";
 }
 
-void depthFirstSearch(int start, vector<vector<int>>& graph)
-{
+void depthFirstSearch(int start, vector<vector<int>>& graph) {
     vector<bool> visited(graph.size(), false);
     stack<int> s;
 
@@ -58,8 +56,7 @@ void depthFirstSearch(int start, vector<vector<int>>& graph)
     cout << "\n";
 }
 
-int binarySearch(vector<int>& array, int target)
-{
+int binarySearch(vector<int>& array, int target) {
     int left = 0;
     int right = array.size() - 1;
 
@@ -77,4 +74,29 @@ int binarySearch(vector<int>& array, int target)
 
     // If the target is not found
     return -1;
+}
+
+int partition(vector<int>& array, int low, int high) {
+    int pivot = array[high];
+    int i = low - 1;
+
+    for (int j = low; j < high; j++) {
+        if (array[j] < pivot) {
+            i++;
+            swap(array[i], array[j]);
+        }
+    }
+
+    swap(array[i + 1], array[high]);
+
+    return i + 1;
+}
+
+void quickSort(vector<int>& array, int low, int high) {
+    if (low < high) {
+        int pivot = partition(array, low, high);
+
+        quickSort(array, low, pivot - 1);
+        quickSort(array, pivot + 1, high);
+    }
 }

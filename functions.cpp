@@ -6,8 +6,7 @@
 
 using namespace std;
 
-void testBFS()
-{
+void testBFS() {
     vector<vector<int>> graph = {
         {1, 2},
         {0, 3, 4},
@@ -21,8 +20,7 @@ void testBFS()
     breadthFirstSearch(0, graph);
 }
 
-void testDFS()
-{
+void testDFS() {
     vector<vector<int>> graph = {
         {1, 2},
         {0, 3, 4},
@@ -36,9 +34,21 @@ void testDFS()
     depthFirstSearch(0, graph);
 }
 
-void testBinarySearch()
-{
+void testBinarySearch() {
     vector<int> array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
     cout << "Binary Search: " << binarySearch(array, 5) << "\n";
+}
+
+void testQuickSort() {
+    vector<int> array = { 10, 7, 8, 9, 1, 5 };
+
+    cout << "Quick Sort: ";
+    quickSort(array, 0, array.size() - 1);
+
+    for (int i = 0; i < array.size(); i++) {
+        cout << array[i] << " ";
+    }
+
+    cout << "\n";
 }

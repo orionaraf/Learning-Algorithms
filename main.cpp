@@ -4,9 +4,8 @@
 
 #include "functions.hpp"
 
-int main()
-{
-    testBinarySearch();
+int main() {
+    testQuickSort();
 
     return 0;
 }
